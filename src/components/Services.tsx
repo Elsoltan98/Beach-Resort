@@ -17,13 +17,13 @@ const Services = () => {
             info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores.",
         },
         {
-            id: 1,
+            id: 3,
             icon: <FaShuttleVan />,
             title: "Free Shuttle",
             info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores.",
         },
         {
-            id: 1,
+            id: 4,
             icon: <FaBeer />,
             title: "Strongest Beer",
             info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores.",
