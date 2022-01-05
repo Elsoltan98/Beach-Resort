@@ -36,9 +36,16 @@ const ContextProvider = ({children}: any) => {
             sortRooms: rooms,
             loading: false
         })
-    }, [])
+    }, []);
+
+    const getRoom = (slug: any) => {
+        let rooms = [...state.rooms];
+        const selectedRoom = rooms.find((room: {slug: string}) => room.slug === slug);
+        
+        return selectedRoom;
+    }
     return (
-        <RoomContext.Provider value={{...state}}>
+        <RoomContext.Provider value={{...state, getRoom}}>
             {children}
         </RoomContext.Provider>
     )
